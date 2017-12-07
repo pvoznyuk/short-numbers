@@ -9,7 +9,7 @@ e.g. it can format number `25300` as `25.3k` and convert `25.3k` to `25300`
 ### Format numbers in short format 
 
 ```python
-from short_numbers import millify
+from shortnumbers import millify
 
 millify(1000); # -> '1k'
 millify(5678000); # -> '6M'
@@ -23,7 +23,7 @@ millify(12345, precision=2, prefix="$"); # -> '$12.35k'
 ### Parse short format as an origina value
 
 ```python
-from short_numbers import reverse_millify
+from shortnumbers import reverse_millify
 
 reverse_millify("0"); # -> 0.0
 reverse_millify("1"); # -> 1.0

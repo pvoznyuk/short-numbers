@@ -1,5 +1,5 @@
 import unittest
-from short_numbers import millify, reverse_millify
+from shortnumbers import millify, reverse_millify
 
 class TestDefaultMillify(unittest.TestCase):
 
