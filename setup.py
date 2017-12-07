@@ -1,5 +1,5 @@
 from distutils.core import setup
-from shortnumbers import __version__, __author__
+from shortnumbers.shortnumbers import __version__, __author__
 
 setup(
     name='shortnumbers',
