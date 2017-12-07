@@ -4,6 +4,12 @@ A Python package to display big numbers in short format and vice-versa, parse sh
 
 e.g. it can format number `25300` as `25.3k` and convert `25.3k` to `25300`
 
+## Installation
+
+```bash
+pip install shortnumbers
+```
+
 ## Usage
 
 ### Format numbers in short format 
