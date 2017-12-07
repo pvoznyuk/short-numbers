@@ -1,7 +1,7 @@
 __author__ = "Pavlo Vozniuk"
 __copyright__ = "Copyright 2017, Pavlo Vozniuk"
 __license__ = "MIT"
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 import math
 import re
@@ -11,7 +11,7 @@ millnames = ['', 'k', 'M', 'B', 'T', 'P', 'E']
 
 # convert 1.1k to 1100
 # 1.1kB is also converted to 1100
-def reverse_millify(string):
+def parse_millify(string):
     parts = re.search("([-+]?\d*\.\d+|\d+)([kMBTPE]{0,1})([\S]*)", str(string))
     # print(string + ' -> ' + parts[1] + ' ' + parts[2]);
 
