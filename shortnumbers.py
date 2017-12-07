@@ -11,7 +11,7 @@ millnames = ['', 'k', 'M', 'B', 'T', 'P', 'E']
 
 # convert 1.1k to 1100
 # 1.1kB is also converted to 1100
-def reverse_millify(string):
+def parse_millify(string):
     parts = re.search("([-+]?\d*\.\d+|\d+)([kMBTPE]{0,1})([\S]*)", str(string))
     # print(string + ' -> ' + parts[1] + ' ' + parts[2]);
 

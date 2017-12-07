@@ -23,12 +23,12 @@ millify(12345, precision=2, prefix="$"); # -> '$12.35k'
 ### Parse short format as an origina value
 
 ```python
-from shortnumbers import reverse_millify
+from shortnumbers import parse_millify
 
-reverse_millify("0"); # -> 0.0
-reverse_millify("1"); # -> 1.0
-reverse_millify("1k"); # -> 1000.0
-reverse_millify("-1.56k"); # -> -1560.0
-reverse_millify("24.5MB"); # -> 24500000.0
-reverse_millify("24.5B"); # -> 24500000000.0
+parse_millify("0"); # -> 0.0
+parse_millify("1"); # -> 1.0
+parse_millify("1k"); # -> 1000.0
+parse_millify("-1.56k"); # -> -1560.0
+parse_millify("24.5MB"); # -> 24500000.0
+parse_millify("24.5B"); # -> 24500000000.0
 ```
