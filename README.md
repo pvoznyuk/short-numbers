@@ -1,8 +1,8 @@
 # Short numbers
 
-A Python package to display big numbers in short format and vice-versa, parse short format and return an origin value. 
+A Python package to display big numbers in a short format and vice-versa: parse short format and return an origin value. 
 
-e.g. it can format number `25300` as `25.3k` and convert `25.3k` to `25300`
+e.g. it can format number `25300` as `25.3k` and convert `25.3k` back to `25300`
 
 ## Installation
 
