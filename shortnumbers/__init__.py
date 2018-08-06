@@ -1,8 +1,3 @@
-__author__ = "Pavlo Vozniuk"
-__copyright__ = "Copyright 2017, Pavlo Vozniuk"
-__license__ = "MIT"
-__version__ = "0.1.2"
-
 import math
 import re
 
@@ -13,18 +8,17 @@ millnames = ['', 'k', 'M', 'B', 'T', 'P', 'E']
 # 1.1kB is also converted to 1100
 def parse_millify(string):
     parts = re.search("([-+]?\d*\.\d+|\d+)([kMBTPE]{0,1})([\S]*)", str(string))
-    # print(string + ' -> ' + parts[1] + ' ' + parts[2]);
-
-    if (parts[1]):
+    # print(string + ' -> ' + parts.group(1) + ' ' + parts.group(2))
+    if parts:
         multiply = 1;
 
-        if (parts[2]):
-            index = millnames.index(parts[2]);
+        if parts.group(2):
+            index = millnames.index(parts.group(2))
 
-            if (index):
+            if index:
                 multiply = 1000 ** (index)
 
-        return float(parts[1]) * multiply
+        return float(parts.group(1)) * multiply
     else:
         return 0
 
