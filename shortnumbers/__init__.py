@@ -2,7 +2,7 @@
 __author__ = "Pavlo Vozniuk"
 __copyright__ = "Copyright 2017, Pavlo Vozniuk"
 __license__ = "MIT"
-__version__ = "0.1.2"
+__version__ = "0.2.0"
 
 import math
 import re
